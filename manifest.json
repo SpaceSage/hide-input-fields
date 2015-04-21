@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hide Ipnut",
+  "description": "Hides the data inside input fields, so you don't have to worry about it being seen by anyone else. Great for streamers, or if you're working in public.",
+  "version": "1.0",
+  
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["hide.css"]
+    }
+  ]
+}
